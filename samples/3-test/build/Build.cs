@@ -7,12 +7,6 @@ using Hexagrams.Fallout.Components;
 
 class Build : FalloutBuild, ICompile, ITest, IReportCoverage
 {
-    /// Support plugins are available for:
-    ///   - JetBrains ReSharper        https://nuke.build/resharper
-    ///   - JetBrains Rider            https://nuke.build/rider
-    ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
-    ///   - Microsoft VSCode           https://nuke.build/vscode
-
     public static int Main() => Execute<Build>(x => ((ICompile) x).Compile);
 
     // The path to the solution file must be explicitly specified because this project is nested below the main build

@@ -21,4 +21,4 @@
 
 dotnet tool restore
 
-dotnet nuke
+dotnet fallout

@@ -3,7 +3,7 @@ using Fallout.Common;
 namespace Hexagrams.Fallout.Components;
 
 /// <summary>
-/// Extension methods for NUKE <see href="https://nuke.build/docs/sharing/build-components/">build components</see>.
+/// Extension methods for Fallout <see href="https://docs.fallout.build/docs/sharing/build-components">build components</see>.
 /// </summary>
 public static class ComponentExtensions
 {

@@ -7,7 +7,7 @@ public class GreeterTests
     {
         var greeter = new Greeter();
 
-        const string name = "NUKE Build";
+        const string name = "Fallout Build";
 
         var greeting = greeter.Greet(name);
 
