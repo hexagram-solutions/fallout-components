@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Components\Hexagrams.Nuke.Components.csproj" />
+    <ProjectReference Include="..\src\Components\Hexagrams.Fallout.Components.csproj" />
   </ItemGroup>
 
 </Project>

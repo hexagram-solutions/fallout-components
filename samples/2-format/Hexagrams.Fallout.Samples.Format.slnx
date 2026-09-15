@@ -10,6 +10,6 @@
     </Project>
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/App/Hexagrams.Nuke.Samples.Format.App.csproj" />
+    <Project Path="src/App/Hexagrams.Fallout.Samples.Format.App.csproj" />
   </Folder>
 </Solution>

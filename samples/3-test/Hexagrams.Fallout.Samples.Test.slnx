@@ -5,11 +5,11 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/src/">
-    <Project Path="src/Library/Hexagrams.Nuke.Samples.Test.Library.csproj" />
+    <Project Path="src/Library/Hexagrams.Fallout.Samples.Test.Library.csproj" />
   </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/Library/">
-    <Project Path="tests/Library/Hexagrams.Nuke.Samples.Test.Library.Tests.csproj" />
+    <Project Path="tests/Library/Hexagrams.Fallout.Samples.Test.Library.Tests.csproj" />
   </Folder>
   <Project Path="build/_build.csproj">
     <Build Project="false" />
