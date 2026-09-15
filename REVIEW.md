@@ -1,6 +1,6 @@
 # REVIEW.md
 
-Reviewer guidance for changes in this repo. This is a shared NUKE build-component
+Reviewer guidance for changes in this repo. This is a shared Fallout build-component
 library consumed by other repos' build projects — a regression here silently
 breaks CI or publishing in every downstream repo, often without a compile error,
 so review priorities skew toward behavioral correctness of the composed
@@ -23,7 +23,7 @@ so review priorities skew toward behavioral correctness of the composed
    — rather than throwing, so double-check the interface named in `as` matches
    the interface whose members are being accessed.
 3. **Changes to `.github/workflows/*.yml`.** These are hand-maintained (the
-   NUKE `[GitHubActions]` generator was dropped because it can't emit
+   Fallout `[GitHubActions]` generator was dropped because it can't emit
    `fetch-tags`). Confirm `checkout` keeps both `fetch-depth: 0` and
    `fetch-tags: true` — without tags, MinVer computes `0.0.0` and the `Push`
    target's `GitRepository.Tags.Any()` guard aborts the release. Confirm any
@@ -36,7 +36,7 @@ so review priorities skew toward behavioral correctness of the composed
   from the `NuGetApiKey` parameter, which `release.yml` supplies from the
   `NUGET_API_KEY` repo secret. Any change to how this value is resolved,
   logged, or passed to `DotNetNuGetPush` needs scrutiny — `[Secret]` only
-  redacts NUKE's own console/summary output, it does not prevent the value
+  redacts Fallout's own console/summary output, it does not prevent the value
   from leaking if someone adds a `Trace`/`Serilog` call or writes it to a
   report file.
 - **`release.yml` / `IPush.Push`** — the only target in this repo with a
@@ -49,14 +49,14 @@ so review priorities skew toward behavioral correctness of the composed
 ## Invariants that must hold
 
 - **Backward compatibility of the public interface surface.** Every `interface`
-  under `src/Components` is the public API of the `Hexagrams.Nuke.Components` NuGet
-  package. Adding a new member to an existing interface is source-breaking for
+  under `src/Components` is the public API of the `Hexagrams.Fallout.Components`
+  NuGet package. Adding a new member to an existing interface is source-breaking for
   any consumer that doesn't use default interface methods correctly, and
   renaming/removing a `Target`, parameter, or settings property is breaking for
   every downstream repo pinned to a version range. Flag any rename/removal on an
   existing public member and confirm it's an intentional major-version change.
-- **Target names are part of the CLI contract.** NUKE maps a `Target` property
-  name to a kebab-case CLI argument (e.g. `VerifyFormat` → `nuke verify-format`).
+- **Target names are part of the CLI contract.** Fallout maps a `Target` property
+  name to a kebab-case CLI argument (e.g. `VerifyFormat` → `fallout verify-format`).
   Renaming a `Target` property changes the CLI surface for every consumer's
   `build.ps1`/`build.sh`/CI invocation.
 - **`sealed` on `*SettingsBase` members** (e.g. `CompileSettingsBase` in
@@ -67,8 +67,8 @@ so review priorities skew toward behavioral correctness of the composed
 ## Known false positives
 
 - **Interfaces with only default implementations and no state** (every file in
-  `src/Components`) are correct NUKE usage, not dead abstractions — this is the
-  documented [NUKE component pattern](https://nuke.build/docs/sharing/build-components),
+  `src/Components`) are correct Fallout usage, not dead abstractions — this is the
+  documented [Fallout component pattern](https://docs.fallout.build/docs/sharing/build-components),
   not over-engineering.
 - **`this as IOtherComponent` casts** in `ICompile.cs`, `IPack.cs`, `ITest.cs`,
   etc. are the intended mechanism for optional inter-component wiring, not a
@@ -81,7 +81,7 @@ so review priorities skew toward behavioral correctness of the composed
 
 ## Skip rules
 
-- `docs/` (DocFX config/templates) and `.nuke/*.json` (schema/parameter cache)
+- `docs/` (DocFX config/templates) and `.fallout/*.json` (schema/parameter cache)
   are tooling scaffolding, not hand-maintained content.
-- Formatting/style is enforced by `nuke verify-format` in CI — don't flag
+- Formatting/style is enforced by `fallout verify-format` in CI — don't flag
   whitespace or `dotnet format`-covered style issues.

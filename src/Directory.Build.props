@@ -11,12 +11,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>Shared components for the NUKE build system.</Description>
+    <Description>Shared components for the Fallout build system.</Description>
     <Authors>Hexagrams Solutions</Authors>
     <Copyright>Copyright $([System.DateTime]::Now.Year) Hexagrams Solutions</Copyright>
-    <PackageTags>build-automation continuous-integration tools nuke</PackageTags>
+    <PackageTags>build-automation continuous-integration tools fallout</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/hexagram-solutions/nuke-components</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/hexagram-solutions/fallout-components</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 

@@ -1,7 +1,7 @@
 using System.ComponentModel;
-using Nuke.Common.Tooling;
+using Fallout.Common.Tooling;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// The configuration to use for building the project.

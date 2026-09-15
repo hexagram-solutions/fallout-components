@@ -1,8 +1,8 @@
-using Nuke.Common;
-using Nuke.Common.IO;
-using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using Fallout.Common;
+using Fallout.Common.IO;
+using static Fallout.Common.Tools.DotNet.DotNetTasks;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Provides targets and configuration for verifying and applying code style preferences.
@@ -11,7 +11,7 @@ public interface IFormat : IHasSolution
 {
     /// <summary>
     /// Paths to exclude from formatting and formatting verification. Paths must be relative to the build's root
-    /// directory (<see cref="NukeBuild.RootDirectory"/>)
+    /// directory (<see cref="FalloutBuild.RootDirectory"/>)
     /// </summary>
     IEnumerable<AbsolutePath> ExcludedFormatPaths { get; }
 

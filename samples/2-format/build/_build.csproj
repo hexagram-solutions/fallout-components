@@ -5,9 +5,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace />
     <NoWarn>CS0649;CS0169</NoWarn>
-    <NukeRootDirectory>..</NukeRootDirectory>
-    <NukeScriptDirectory>..</NukeScriptDirectory>
-    <NukeTelemetryVersion>1</NukeTelemetryVersion>
+    <FalloutRootDirectory>..</FalloutRootDirectory>
+    <FalloutScriptDirectory>..</FalloutScriptDirectory>
   </PropertyGroup>
 
   <!-- Not usually necessary, prevents this project from being packed when the root solution is built -->
@@ -16,11 +15,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nuke.Common" />
+    <PackageReference Include="Fallout.Common" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Components\Hexagrams.Nuke.Components.csproj" />
+    <ProjectReference Include="..\..\..\src\Components\Hexagrams.Fallout.Components.csproj" />
   </ItemGroup>
 
 </Project>

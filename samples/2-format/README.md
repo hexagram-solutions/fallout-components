@@ -11,14 +11,14 @@ If formatting passes, a basic build of the solution runs using the
 To see the output, invoke the `VerifyFormat` target with this command:
 
 ```powershell
-nuke verify-format
+fallout verify-format
 ```
 
 In the case that formatting issues are found, the `IFormat` component also
 provides a target to fix the formatting:
 
 ```powershell
-nuke format
+fallout format
 ```
 
 Since the default compile target depends on `IFormat`, the formatting target is

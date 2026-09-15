@@ -1,9 +1,9 @@
-using Nuke.Common;
+using Fallout.Common;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
-/// Extension methods for NUKE <see href="https://nuke.build/docs/sharing/build-components/">build components</see>.
+/// Extension methods for Fallout <see href="https://docs.fallout.build/docs/sharing/build-components">build components</see>.
 /// </summary>
 public static class ComponentExtensions
 {
@@ -13,8 +13,8 @@ public static class ComponentExtensions
     /// <typeparam name="TComponent">The component type.</typeparam>
     /// <param name="build">The build definition.</param>
     /// <returns></returns>
-    public static TComponent FromComponent<TComponent>(this INukeBuild build)
-        where TComponent : INukeBuild
+    public static TComponent FromComponent<TComponent>(this IFalloutBuild build)
+        where TComponent : IFalloutBuild
     {
         return (TComponent) build;
     }

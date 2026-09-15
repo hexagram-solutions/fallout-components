@@ -12,5 +12,5 @@ To see the output, invoke the default build from the solution directory for this
 sample:
 
 ```powershell
-nuke
+fallout
 ```

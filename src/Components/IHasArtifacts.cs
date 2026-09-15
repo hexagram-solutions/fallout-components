@@ -1,12 +1,12 @@
-using Nuke.Common;
-using Nuke.Common.IO;
+using Fallout.Common;
+using Fallout.Common.IO;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Provides properties for controlling build artifact output.
 /// </summary>
-public interface IHasArtifacts : INukeBuild
+public interface IHasArtifacts : IFalloutBuild
 {
     /// <summary>
     /// The output directory for build artifacts.

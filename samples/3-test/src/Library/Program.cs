@@ -1,4 +1,4 @@
-namespace Hexagrams.Nuke.Samples.Test.Library;
+namespace Hexagrams.Fallout.Samples.Test.Library;
 
 public class Greeter
 {

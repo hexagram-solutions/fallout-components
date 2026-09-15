@@ -1,20 +1,20 @@
 using System.Collections.Generic;
 using System.Linq;
-using Hexagrams.Nuke.Components;
-using Nuke.Common;
-using Nuke.Common.CI;
-using Nuke.Common.IO;
-using Nuke.Common.ProjectModel;
-using Nuke.Common.Tooling;
-using Nuke.Common.Tools.DotNet;
-using Nuke.Common.Utilities;
+using Fallout.Common;
+using Fallout.Common.CI;
+using Fallout.Common.IO;
+using Fallout.Common.Tooling;
+using Fallout.Common.Tools.DotNet;
+using Fallout.Common.Utilities;
+using Fallout.Solutions;
+using Hexagrams.Fallout.Components;
 
 // ReSharper disable RedundantExtendsListEntry
 // ReSharper disable InconsistentNaming
 
 [DotNetVerbosityMapping]
 [ShutdownDotNetAfterServerBuild]
-partial class Build : NukeBuild,
+partial class Build : FalloutBuild,
     IHasGitRepository,
     IHasVersioning,
     IRestore,
@@ -26,12 +26,6 @@ partial class Build : NukeBuild,
     IPack,
     IPush
 {
-    /// Support plugins are available for:
-    ///   - JetBrains ReSharper        https://nuke.build/resharper
-    ///   - JetBrains Rider            https://nuke.build/rider
-    ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
-    ///   - Microsoft VSCode           https://nuke.build/vscode
-
     public static int Main() => Execute<Build>(x => ((ITest) x).Test);
 
     [Solution]

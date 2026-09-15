@@ -1,4 +1,4 @@
-namespace Hexagrams.Nuke.Samples.Test.Library.Tests;
+namespace Hexagrams.Fallout.Samples.Test.Library.Tests;
 
 public class GreeterTests
 {
@@ -7,7 +7,7 @@ public class GreeterTests
     {
         var greeter = new Greeter();
 
-        const string name = "NUKE Build";
+        const string name = "Fallout Build";
 
         var greeting = greeter.Greet(name);
 
