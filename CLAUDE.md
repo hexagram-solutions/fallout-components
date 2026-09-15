@@ -87,7 +87,7 @@ inheriting `IFalloutBuild` (directly or via `IHasSolution`, etc.). A consuming
 
 ## SDK & Language
 
-- .NET SDK pinned to `10.0.302` (`rollForward: latestMinor`) in `global.json`;
+- .NET SDK pinned to `10.0.401` (`rollForward: latestMinor`) in `global.json`;
   `src/Components` and samples target `net10.0`.
 - Central Package Management (`Directory.Packages.props`) — never edit
   `.csproj`/`Directory.Packages.props` directly; use `dotnet package add`/
