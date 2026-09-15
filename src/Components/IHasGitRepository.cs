@@ -1,12 +1,12 @@
-using Nuke.Common;
-using Nuke.Common.Git;
+using Fallout.Common;
+using Fallout.Common.Git;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Provides properties for accessing information about the current Git repository.
 /// </summary>
-public interface IHasGitRepository : INukeBuild
+public interface IHasGitRepository : IFalloutBuild
 {
     /// <summary>
     /// Gets information about the current Git repository.

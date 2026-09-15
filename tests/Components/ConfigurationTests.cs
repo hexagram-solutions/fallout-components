@@ -1,4 +1,4 @@
-namespace Hexagrams.Nuke.Components.Tests;
+namespace Hexagrams.Fallout.Components.Tests;
 
 public class ConfigurationTests
 {

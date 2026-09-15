@@ -1,6 +1,6 @@
-using Nuke.Common.IO;
+using Fallout.Common.IO;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Provides properties for controlling build report output.

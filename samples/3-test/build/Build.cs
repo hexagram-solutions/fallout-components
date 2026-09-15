@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Hexagrams.Nuke.Components;
-using Nuke.Common;
-using Nuke.Common.ProjectModel;
+using Fallout.Common;
+using Fallout.Solutions;
+using Hexagrams.Fallout.Components;
 
 // ReSharper disable RedundantExtendsListEntry
 
-class Build : NukeBuild, ICompile, ITest, IReportCoverage
+class Build : FalloutBuild, ICompile, ITest, IReportCoverage
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -17,7 +17,7 @@ class Build : NukeBuild, ICompile, ITest, IReportCoverage
 
     // The path to the solution file must be explicitly specified because this project is nested below the main build
     // project for the repository. Normally, you don't have to specify a relative path to the solution file.
-    [Solution("./Hexagrams.Nuke.Samples.Test.slnx")]
+    [Solution("./Hexagrams.Fallout.Samples.Test.slnx")]
     readonly Solution Solution;
     Solution IHasSolution.Solution => Solution;
 

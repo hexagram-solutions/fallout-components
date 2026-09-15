@@ -1,4 +1,4 @@
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Extension methods for tool execution configuration.

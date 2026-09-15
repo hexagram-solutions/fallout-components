@@ -1,18 +1,18 @@
 using System.Globalization;
-using Nuke.Common;
-using Nuke.Common.CI.AzurePipelines;
-using Nuke.Common.CI.GitHubActions;
-using Nuke.Common.CI.TeamCity;
-using Nuke.Common.IO;
-using Nuke.Common.ProjectModel;
-using Nuke.Common.Tooling;
-using Nuke.Common.Tools.Coverlet;
-using Nuke.Common.Tools.DotNet;
-using Nuke.Common.Utilities;
-using Nuke.Common.Utilities.Collections;
-using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using Fallout.Common;
+using Fallout.Common.CI.AzurePipelines;
+using Fallout.Common.CI.GitHubActions;
+using Fallout.Common.CI.TeamCity;
+using Fallout.Common.IO;
+using Fallout.Common.Tooling;
+using Fallout.Common.Tools.Coverlet;
+using Fallout.Common.Tools.DotNet;
+using Fallout.Common.Utilities;
+using Fallout.Common.Utilities.Collections;
+using Fallout.Solutions;
+using static Fallout.Common.Tools.DotNet.DotNetTasks;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Targets and configuration for executing unit tests in the solution.

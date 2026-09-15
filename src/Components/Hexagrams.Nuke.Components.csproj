@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nuke.Common" />
+    <PackageReference Include="Fallout.Common" />
   </ItemGroup>
 
 </Project>

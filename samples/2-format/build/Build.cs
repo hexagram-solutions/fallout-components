@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using Hexagrams.Nuke.Components;
-using Nuke.Common;
-using Nuke.Common.IO;
-using Nuke.Common.ProjectModel;
+using Fallout.Common;
+using Fallout.Common.IO;
+using Fallout.Solutions;
+using Hexagrams.Fallout.Components;
 
-class Build : NukeBuild, IFormat, ICompile
+class Build : FalloutBuild, IFormat, ICompile
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -17,7 +17,7 @@ class Build : NukeBuild, IFormat, ICompile
 
     // The path to the solution file must be explicitly specified because this project is nested below the main build
     // project for the repository. Normally, you don't have to specify a relative path to the solution file.
-    [Solution("./Hexagrams.Nuke.Samples.Format.slnx")]
+    [Solution("./Hexagrams.Fallout.Samples.Format.slnx")]
     readonly Solution Solution;
     Solution IHasSolution.Solution => Solution;
 

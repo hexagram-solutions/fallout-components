@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Concurrent;
-using Nuke.Common;
-using Nuke.Common.Tooling;
-using Nuke.Common.Tools.MinVer;
-using static Nuke.Common.Tools.MinVer.MinVerTasks;
+using Fallout.Common;
+using Fallout.Common.Tooling;
+using Fallout.Common.Tools.MinVer;
+using static Fallout.Common.Tools.MinVer.MinVerTasks;
 
-namespace Hexagrams.Nuke.Components;
+namespace Hexagrams.Fallout.Components;
 
 /// <summary>
 /// Provides properties for accessing versioning information calculated with
@@ -18,7 +18,7 @@ namespace Hexagrams.Nuke.Components;
 /// &lt;PackageDownload Include="minver-cli" Version="[x.y.z]" /&gt;
 /// </code>
 /// </remarks>
-public interface IHasVersioning : INukeBuild
+public interface IHasVersioning : IFalloutBuild
 {
     // Lazy value: ConcurrentDictionary.GetOrAdd may invoke its factory more than once under
     // contention, but only the winning Lazy is ever observed, so minver-cli runs exactly once.

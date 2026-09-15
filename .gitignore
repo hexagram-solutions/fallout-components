@@ -1,8 +1,8 @@
 # Project-specific ignores
 # ============================================
 
-# NUKE build temporary folder
-/.nuke/temp/
+# Fallout build temporary folder
+**/.fallout/temp/
 
 # User-specific AI tooling settings
 .claude/*.local.*
