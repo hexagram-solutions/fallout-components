@@ -12,7 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Fallout.Common" />
     <PackageDownload Include="minver-cli" Version="[6.1.0]" />
-    <PackageDownload Include="ReportGenerator" Version="[5.5.10]" />
+    <PackageDownload Include="ReportGenerator" Version="[5.5.11]" />
   </ItemGroup>
 
   <ItemGroup>

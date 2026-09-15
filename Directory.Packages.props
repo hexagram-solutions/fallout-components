@@ -10,8 +10,8 @@
     <PackageVersion Include="Fallout.Common" Version="10.4.0" />
     <!-- Held at 7.x: FluentAssertions 8.0+ requires a paid commercial license. -->
     <PackageVersion Include="FluentAssertions" Version="[7.2.0]" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
-    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.303" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.401" />
     <!-- Transitive pins (via Fallout.Common). Fallout.Common 10.4.0 resolves the NuGet client
          libraries at 6.14.x, but the .NET 10.0.4xx SDK's MSBuild targets bind to
          NuGet.Frameworks 7.9.0.0. The 6.14.x copy in the build project's output wins at
@@ -22,7 +22,7 @@
     <PackageVersion Include="NuGet.Frameworks" Version="7.9.0" />
     <PackageVersion Include="NuGet.Packaging" Version="7.9.0" />
     <PackageVersion Include="NuGet.Versioning" Version="7.9.0" />
-    <PackageVersion Include="ReportGenerator" Version="5.5.10" />
+    <PackageVersion Include="ReportGenerator" Version="5.5.11" />
     <PackageVersion Include="xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
   </ItemGroup>
