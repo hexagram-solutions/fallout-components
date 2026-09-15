@@ -14,7 +14,7 @@ implementing the matching interface.
 Install the package into your build project:
 
 ```powershell
-dotnet add package .\build\MyFalloutBuild.csproj Hexagrams.Fallout.Components
+dotnet package add Hexagrams.Fallout.Components --project .\build\MyFalloutBuild.csproj
 ```
 
 Then implement the components you want:
@@ -26,7 +26,7 @@ class Build : FalloutBuild, ICompile, ITest
 }
 ```
 
-See the [API Reference](api/Hexagrams.Fallout.Components.html) for the full list
+See the <xref:Hexagrams.Fallout.Components> API reference for the full list
 of components, and the
 [samples](https://github.com/hexagram-solutions/fallout-components/tree/main/samples)
 for runnable examples of each one in isolation.

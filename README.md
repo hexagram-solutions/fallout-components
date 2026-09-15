@@ -24,7 +24,7 @@ dotnet husky install
 To use the shared components in your build, install the NuGet package:
 
 ```powershell
-dotnet add package .\build\MyFalloutBuild.csproj Hexagrams.Fallout.Components
+dotnet package add Hexagrams.Fallout.Components --project .\build\MyFalloutBuild.csproj
 ```
 
 > ℹ In your build project, you'll want to keep or add an explicit
@@ -33,7 +33,7 @@ dotnet add package .\build\MyFalloutBuild.csproj Hexagrams.Fallout.Components
 > by the Fallout MSBuild targets:
 >
 > ```powershell
-> dotnet add package .\build\MyFalloutBuild.csproj Fallout.Common
+> dotnet package add Fallout.Common --project .\build\MyFalloutBuild.csproj
 > ```
 
 See the [samples](./samples/) for examples of how to use these components in
